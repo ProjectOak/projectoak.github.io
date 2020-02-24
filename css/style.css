@@ -17,7 +17,7 @@ body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #2c3e50;
-  background-color: #e0ecff; }
+  background-color: #f0f0f0; }
 
 h1, h2, h3, p {
   margin: 0;
@@ -67,23 +67,40 @@ blockquote {
   -webkit-background-size: cover;
   background-size: cover; }
 
-.small-img, .big-img {
+.post-img, .big-img {
   width: 100%; }
 
-.small-img {
+.post-img {
+  background-position: 0% 50%;
   height: 100%; }
 
 .big-img {
+  background-position: 50% 0%;
   height: 382px; }
 
-.src-url-01 {
+.bgi-top {
+  background-position: 50% 0%; }
+
+.bgi-left {
+  background-position: 50% 0%; }
+
+.bgi-right {
+  background-position: 50% 0%; }
+
+.post-url-01 {
   background-image: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/994064/1160/772/m1/fpnw/wm0/perspective-app-screens-mock-up-.jpg?1455523904&s=093eca0b3c9b5a99e6574c56bc30042f); }
 
-.src-url-02 {
-  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--4esYzKEz--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/5a4198c854805c4cab0acc90eb464977/1560x750_graba_ggr_us_trailer_cards_ani.gif); }
+.post-url-02 {
+  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--S3NzBx2Q--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive.apng/v1/0b1254489ea1295ba8317c4b0da53f37/2000x1000_ggr_got_2_jkls.png); }
 
-.src-url-03 {
+.post-url-03 {
   background-image: url(https://www.free-mockup.com/wp-content/uploads/edd/2019/09/Free-Isometric-iPhone-XR-Mockup-1000x750.jpg); }
+
+.post-ggr-url-01 {
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg); }
 
 .primary-button {
   display: inline-block;
