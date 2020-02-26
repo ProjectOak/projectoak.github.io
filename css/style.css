@@ -71,55 +71,39 @@ blockquote {
   width: 100%;
 }
 
-.banner-img {
+.bg-img {
   background-color: #FFFFFF;
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.post-img, .big-img {
+.card > .bg-img {
+  height: 100%;
   width: 100%;
 }
 
-.post-img {
-  background-position: 0% 50%;
-  height: 100%;
-}
-
-.big-img {
-  background-position: 50% 0%;
+.article > .bg-img {
   height: 382px;
+  width: 100%;
 }
 
-.bgi-top {
-  background-position: 50% 0%;
-}
-
-.bgi-left {
-  background-position: 50% 0%;
-}
-
-.bgi-right {
-  background-position: 50% 0%;
+.card > .post-url-01,
+.card > .post-url-03 {
+  background-position: 50% 50%;
 }
 
 .post-url-01 {
-  background-image: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/994064/1160/772/m1/fpnw/wm0/perspective-app-screens-mock-up-.jpg?1455523904&s=093eca0b3c9b5a99e6574c56bc30042f);
+  background-position: 50% 10%;
+  background-image: url(/images/Banner-Anki.png);
 }
 
 .post-url-02 {
-  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--S3NzBx2Q--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive.apng/v1/0b1254489ea1295ba8317c4b0da53f37/2000x1000_ggr_got_2_jkls.png);
+  background-image: url(/images/Banner-GGR.png);
 }
 
 .post-url-03 {
-  background-image: url(https://www.free-mockup.com/wp-content/uploads/edd/2019/09/Free-Isometric-iPhone-XR-Mockup-1000x750.jpg);
-}
-
-.post-ggr-url-01 {
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg);
+  background-position: 50% 10%;
+  background-image: url(/images/Banner-Belote.png);
 }
 
 .primary-button {
@@ -290,7 +274,8 @@ blockquote {
   }
 
   .banner h1 {
-    max-width: 680px;
+    text-align: center;
+    max-width: 940px;
   }
 
   .card {
@@ -299,13 +284,13 @@ blockquote {
     height: 400px;
   }
 
-  .article-content {
-    padding: 4em;
-  }
-
-  .post-img {
+  .card > .bg-img {
     height: 100%;
     width: 60%;
+  }
+
+  .article-content {
+    padding: 4em;
   }
 
   .content-wrap {
