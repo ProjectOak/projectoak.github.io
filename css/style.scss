@@ -22,7 +22,7 @@ body{
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: $dark-blue;
-  background-color: $light-grey-100;
+  background-color: $white;
 }
 
 
@@ -36,20 +36,20 @@ h1, h2, h3, p{
 
 h1{
   font-size: 3em;
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
   line-height: 1.1;
 }
 
 h2{
   font-size: 2em;
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 800;
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
 }
 
 h3{
   font-size: 1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Asap', sans-serif;
   font-weight: 700;
   margin-bottom: 0.5em;
   margin-top: 2em;
@@ -72,8 +72,8 @@ a{
 blockquote{
   margin: 0;
   font-size: 1.5em;
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 400;
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
   font-style: italic;
   line-height: 1.5;
   color: $green-100;
@@ -93,7 +93,7 @@ blockquote{
   background-size: cover;
 }
 
-.card > .bg-img{
+.bg-img{
   height: 100%;
   width: 100%;
 }
@@ -217,10 +217,13 @@ blockquote{
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  color: $dark-blue;
   &.full{
-    padding: 1em;
+    // padding: 1em;
     height: 100vh;
+    background-color: $dark-blue;
+  }
+  &.half{
+    height: 50vh;
   }
 }
 
@@ -242,7 +245,7 @@ blockquote{
 }
 
 .small-grid{
-  padding: 0;
+  padding: 2em 1em 4em 1em;
   max-width: 960px;
 }
 
@@ -300,12 +303,12 @@ blockquote{
   border-radius: 0;
   overflow: hidden;
   background-color: $white;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15), 0 15px 35px 0 rgba(0, 0, 0, 0.075);
-          box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15), 0 15px 35px 0 rgba(0, 0, 0, 0.075);
+  // -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15), 0 15px 35px 0 rgba(0, 0, 0, 0.075);
+  //         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15), 0 15px 35px 0 rgba(0, 0, 0, 0.075);
 }
 
 .article-content{
-  padding: 4em 1em;
+  // padding: 4em 1em;
   h2{
     text-align: center;
     font-size: 2.5em;
@@ -381,3 +384,29 @@ blockquote{
     bottom: auto;
   }
 }
+
+// ************** ANIMATION CLASSES
+
+.el{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  height: 100%;
+  width: 0%;
+  background-color: $white;
+  // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
+  .el-header{
+    text-align: center;
+    opacity: 0%;
+    color: $dark-blue;
+  }
+}
+
+.small-grid{
+  opacity: 0%;
+}
+
+// .opacity{
+//   opacity: 0%;
+// }
