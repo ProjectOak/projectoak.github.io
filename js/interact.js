@@ -2,9 +2,7 @@
 
 anime({
   targets: '.el',
-  keyframes: [
-    {width: ['0%', '100%']}
-  ],
+  height: ['0%', '100%'],
   easing: 'easeInOutQuad',
   duration: 500,
   delay: 500
@@ -13,8 +11,9 @@ anime({
 anime({
   targets: '.el-header',
   opacity: ['0%', '100%'],
+  scale: [0.85, 1],
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 300,
   delay: 1000
 });
 
@@ -24,7 +23,7 @@ anime({
   targets: '.half',
   opacity: ['0%', '100%'],
   easing: 'easeInOutQuad',
-  duration: 1000,
+  duration: 500,
   delay: 200
 });
 
@@ -32,6 +31,6 @@ anime({
   targets: '.small-grid',
   opacity: ['0%', '100%'],
   easing: 'easeInOutQuad',
-  duration: 1000,
-  delay: 1200
+  duration: 500,
+  delay: 700
 });

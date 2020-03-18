@@ -84,6 +84,11 @@ blockquote{
 
 .img{
   width: 100%;
+  cursor: pointer;
+  transition: transform 100ms ease-out;
+  &:hover{
+    transform: scale(1.025);
+  }
 }
 
 .bg-img{
@@ -291,7 +296,7 @@ blockquote{
 
 .content-wrap{
   display: block;
-  padding: 2em;
+  padding: 1em 1em 2em 1em;
   width: 100%;
 }
 
@@ -372,6 +377,7 @@ blockquote{
   }
 
   .content-wrap{
+    padding: 2em;
     width: 40%;
   }
 
@@ -392,8 +398,8 @@ blockquote{
   align-items: center;
   justify-content: center;
   color: $white;
-  height: 100%;
-  width: 0%;
+  height: 0%;
+  width: 100%;
   background-color: $white;
   // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15)
   .el-header{
