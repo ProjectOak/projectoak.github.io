@@ -82,9 +82,9 @@ blockquote{
 
 // ************** IMAGES
 
-.img{
+.thumbnail{
   width: 100%;
-  cursor: pointer;
+  cursor: zoom-in;
   transition: transform 100ms ease-out;
   &:hover{
     transform: scale(1.025);
@@ -117,14 +117,14 @@ blockquote{
 
 .post-url-01{
   background-position: 50% 10%;
-  background-image: url(https://projectoak.github.io/images/Banner-Anki.png);
+  background-image: url(https://projectoak.github.io/images/Banner-Anki-Small.png);
 }
 .post-url-02{
-  background-image: url(https://projectoak.github.io/images/Banner-GGR.png);
+  background-image: url(https://projectoak.github.io/images/Banner-GGR-Small.png);
 }
 .post-url-03{
   background-position: 50% 10%;
-  background-image: url(https://projectoak.github.io/images/Banner-Belote.png);
+  background-image: url(https://projectoak.github.io/images/Banner-Belote-Small.png);
 }
 
 // ************** BUTTONS
@@ -416,3 +416,28 @@ blockquote{
 // .opacity{
 //   opacity: 0%;
 // }
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+  cursor: zoom-out;
+  .image{
+    width: 75%;
+  	// max-height: 80%;
+  }
+}
+
+.lightbox:target {
+	outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
