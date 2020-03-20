@@ -67,22 +67,10 @@ blockquote {
   color: #1dd1a1;
 }
 
-.thumbnail {
-  width: 100%;
-  cursor: zoom-in;
-  transition: transform 100ms ease-out;
-}
-.thumbnail:hover {
-  transform: scale(1.025);
-}
-
 .bg-img {
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bg-img {
   height: 100%;
   width: 100%;
 }
@@ -92,9 +80,38 @@ blockquote {
   width: 100%;
 }
 
-.card > .post-url-01,
-.card > .post-url-03 {
-  background-position: 50% 50%;
+.thumbnail {
+  width: 100%;
+  cursor: zoom-in;
+  transition: transform 100ms ease-out;
+}
+.thumbnail:hover {
+  transform: scale(1.025);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: zoom-out;
+}
+.lightbox .image {
+  width: 75%;
+  background-color: #FFFFFF;
+}
+
+.lightbox:target {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
 }
 
 .post-url-01 {
@@ -188,7 +205,6 @@ blockquote {
 }
 .banner.full {
   height: 100vh;
-  background-color: #252422;
 }
 .banner.half {
   height: 50vh;
@@ -276,11 +292,6 @@ blockquote {
     padding: 4.5em 1em;
   }
 
-  .banner h1 {
-    text-align: center;
-    max-width: 940px;
-  }
-
   .card {
     text-align: left;
     flex-direction: row;
@@ -314,41 +325,28 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   color: #FFFFFF;
   height: 0%;
   width: 100%;
   background-color: #FFFFFF;
+  color: #252422;
 }
 .el .el-header {
   text-align: center;
   opacity: 0%;
-  color: #252422;
+}
+.el .scroll-down {
+  position: absolute;
+  bottom: 4em;
+  text-align: center;
+  font-size: 0.75em;
 }
 
 .small-grid {
   opacity: 0%;
 }
 
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  cursor: zoom-out;
-}
-.lightbox .image {
-  width: 75%;
-}
-
-.lightbox:target {
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
+.wave {
+  display: inline-block;
 }
