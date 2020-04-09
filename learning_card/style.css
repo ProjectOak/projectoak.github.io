@@ -17,32 +17,34 @@ body{
 
 h1{
   margin: 0;
-  line-height: 2;
-  font-weight: 800;
-  font-size: 25px;
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.250;
 }
 
 h2{
-  font-weight: 800;
-  font-size: 20px;
-  font-family: 'Lato', Helvetica, sans-serif;
+  margin: 0.15em 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.250;
 }
 
 h3{
-  font-weight: 700;
-  font-size: 19px;
-}
-
-h4{
-  font-weight: 700;
-  font-size: 16px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.250;
 }
 
 p{
-  margin: 8px 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.250;
 }
 
 .user-widget p{
@@ -164,8 +166,7 @@ article{
 }
 
   .sub-header h2{
-    margin: 0.5em 0.2em 0.5em 1em;
-    line-height: 1.25;
+    margin: 0.15em 0.2em 0.15em 1em;
   }
 
   .sub-header i.fas.fa-level-up-alt {

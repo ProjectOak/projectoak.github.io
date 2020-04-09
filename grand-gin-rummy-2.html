@@ -12,73 +12,96 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="author" content="">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700|Playfair+Display:400,400i,800,800i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <a href="index.html#article-02" class="back-button">
-      <i class="fas fa-chevron-left"></i>
+  <body class="opacity">
+    <a href="index.html#article-02" class="primary-button back-button">
+      <i class="fas fa-arrow-left"></i>
       <p>Back</p>
+      <div class="slide"></div>
     </a>
-    <header class="banner half">
-      <div class="bg-img post-url-02"></div>
-    </header>
-    <main class="grid small-grid">
+    <main class="article-grid">
       <article class="article">
-        <div class="article-content">
-          <h2>Grand Gin Rummy 2</h2>
-          <blockquote cite="http://">A multi-platform Gin Rummy card game application</blockquote>
-          <h3>Introduction</h3>
-          <p>Designing games and game applications pose a particular challenge for designers given that traditionally design (be that UX, Industrial, Visual and so on) has been described as “problem solving” discipline, which in turn implies on addressing practical user issues and extrinsic problems.</p>
-          <p>Games, for all intents and purposes, sabotage that very principle. Games don’t solve any form of practical problems, they don’t address extrinsic issues but more so intrinsic ones. In many ways, games consumption habits are somewhat static due to its dependency on available hardware (consoles, handhelds, computers, smartphones, VR headsets and etc.), because of that use cases are also quite well defined in the games industry. But, as I’ve learned, boy oh boy, there are plenty of user needs.</p>
-          <p>Therefore, differently from your usual UX project where use cases and journeys are center stage for your decision making process, here user motivation and psychological profile take priority. “Who” your users are and “why” they play matters more than “how” and “where” they play.</p>
-          <a href="#img1">
-            <img class="thumbnail" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
-          </a>
-          <a href="#_" class="lightbox" id="img1">
-            <img class="image" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
-          </a>
-          <h3>Who and why</h3>
-          <p>The main challenge was set, we had to discover who are we designing this for, be able to better understand what motivates Gin players and what they expect from a digital application of a cherished 108 year old card game.</p>
-          <p>With that framework in mind we went off to research and validate our findings with real players and after a considerable research phase and a few surveys we finally had enough data sets to safely outline our demographic, their cross-consumption behavior and motivational profile.</p>
-          <p>By making use of the <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits" target="_blank">five-factor model</a> and combining it with our own methodology we were able to correlate the FFM survey results with the major psychological drivers of card players and gamers. That, in turn, allowed us to map their personality traits into their existing playing behavior making it possible to identify the key playing motivations of our demographic.</p>
-          <p>When all of that was said and done, we moved to use this treasure trove of findings to inform our persona development, feature backlog, art styles and communication strategy. The first draft of the personas can be seen underneath.</p>
-          <a href="#img2">
-            <img class="thumbnail" src="images/GGR-06.png" alt="">
-          </a>
-          <a href="#_" class="lightbox" id="img2">
-            <img class="image" src="images/GGR-06.png" alt="">
-          </a>
-          <h3>Motivations turned into features</h3>
-          <p>Now that we had the social and psychological profile of our players, we were able to develop features and user journeys. In order to do that, we started by mapping out the most prevalent motivations into a feature backlog.</p>
-          <a href="#img3">
-            <img class="thumbnail" src="images/GGR-07.png" alt="">
-          </a>
-          <a href="#_" class="lightbox" id="img3">
-            <img class="image" src="images/GGR-07.png" alt="">
-          </a>
-          <p>That, in turn, translated into the centerpiece of the application, its main screen. Which is comprised of a series of game modes designed to cater to these different user motivations. There you can find the following modes: Practice, Quick, Classic, Oklahoma, Challenges and Tournaments.</p>
-          <p>These were created to respectively address inexperienced players, casual players that prefer short sessions, competitive players that enjoy comparing themselves to other player’s performance and for the social players the ability to challenge opponents, friends and family.</p>
-          <h3>From features to journeys and the product</h3>
-          <p>With the personas and their motivations surveyed and validated, and having the feature set developed, off we went into prototyping and determining how the user journeys should be like.</p>
-          <p>During three months our team focused in developing user journeys that would be in line with all the existing best practices of game applications and beyond that, journeys that would cater to our unique user group.</p>
-          <a href="#img4">
-            <img class="thumbnail" src="images/GGR-05.jpg" alt="">
-          </a>
-          <a href="#_" class="lightbox" id="img4">
-            <img class="image" src="images/GGR-05.jpg" alt="">
-          </a>
-          <p>After multiple design iterations, usability and flow tests, we finally had our MVP good to go. Our user journeys we’re simple and clear which is almost obligatory for game applications. For us, users should start playing with a maximum of two clicks and stay in-game for as long as possible. Because of that we developed the so called “continuous play flow”, in which users are constantly rematch or randomly matched with a new opponent in a single click after their game result.</p>
-          <p>At the same time that the flows were being developed, we also validated user's preference across multiple art styles so that once the prototype was finished the art team would have all the necessary infrastructure to unleash their creative juices in an appropriate framework.</p>
-          <p>Therefore, by the end of this intense period, having all marks checked we were ready to soft launch and put this bad boy out for the world to see. I hope you enjoy playing as much as we enjoyed make it. Now, let’s play!</p>
-          <a href="#img5">
-            <img class="thumbnail" src="images/GGR-08.png" alt="">
-          </a>
-          <a href="#_" class="lightbox" id="img5">
-            <img class="image" src="images/GGR-08.png" alt="">
-          </a>
-        </div>
+        <h2>Grand Gin Rummy 2</h2>
+        <blockquote cite="http://">As the Head of UX at GameDuell I created the UX Design and Research teams from the ground up and connected them to Data, CRM, CS and BI teams. Together we worked in several game titles and maintained the company’s website.</blockquote>
       </article>
+      <div class="lightbox-wrap">
+        <a href="#img1">
+          <img class="thumbnail" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img1">
+          <img class="image" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
+        </a>
+      </div>
+      <article class="article">
+        <h3>Introduction</h3>
+        <p>Designing games and game applications pose a particular challenge for designers given that traditionally design (be that UX, Industrial, Visual and so on) has been described as “problem solving” discipline, which in turn implies on addressing practical user issues and extrinsic problems.</p>
+        <p>Games, for all intents and purposes, sabotage that very principle. Games don’t solve any form of practical problems, they don’t address extrinsic issues but more so intrinsic ones. In many ways, games consumption habits are somewhat static due to its dependency on available hardware (consoles, handhelds, computers, smartphones, VR headsets and etc.), because of that use cases are also quite well defined in the games industry. But, as I’ve learned, boy oh boy, there are plenty of user needs.</p>
+        <p>Therefore, differently from your usual UX project where use cases and journeys are center stage for your decision making process, here user motivation and psychological profile take priority. “Who” your users are and “why” they play matters more than “how” and “where” they play.</p>
+      </article>
+      <div class="lightbox-wrap">
+        <a href="#img1">
+          <img class="thumbnail" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img1">
+          <img class="image" src="https://format-com-cld-res.cloudinary.com/image/private/s--Hu8J8ptW--/c_limit,g_center,h_1200,w_65535/fl_keep_iptc.progressive,q_95/v1/507eb01f303d6db57266d72c59ed3fc4/grandginrummy_winter02_kloss.jpg" alt="">
+        </a>
+      </div>
+      <article class="article">
+        <h3>Who and why</h3>
+        <p>The main challenge was set, we had to discover who are we designing this for, be able to better understand what motivates Gin players and what they expect from a digital application of a cherished 108 year old card game.</p>
+        <p>With that framework in mind we went off to research and validate our findings with real players and after a considerable research phase and a few surveys we finally had enough data sets to safely outline our demographic, their cross-consumption behavior and motivational profile.</p>
+        <p>By making use of the <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits" target="_blank">five-factor model</a> and combining it with our own methodology we were able to correlate the FFM survey results with the major psychological drivers of card players and gamers. That, in turn, allowed us to map their personality traits into their existing playing behavior making it possible to identify the key playing motivations of our demographic.</p>
+        <p>When all of that was said and done, we moved to use this treasure trove of findings to inform our persona development, feature backlog, art styles and communication strategy. The first draft of the personas can be seen underneath.</p>
+      </article>
+      <div class="lightbox-wrap">
+        <a href="#img2">
+          <img class="thumbnail" src="images/GGR-06.png" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img2">
+          <img class="image" src="images/GGR-06.png" alt="">
+        </a>
+      </div>
+      <article class="article">
+      <h3>Motivations turned into features</h3>
+      <p>Now that we had the social and psychological profile of our players, we were able to develop features and user journeys. In order to do that, we started by mapping out the most prevalent motivations into a feature backlog.</p>
+      </article>
+      <div class="lightbox-wrap">
+        <a href="#img3">
+          <img class="thumbnail" src="images/GGR-07.png" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img3">
+          <img class="image" src="images/GGR-07.png" alt="">
+        </a>
+      </div>
+      <article class="article">
+        <p>That, in turn, translated into the centerpiece of the application, its main screen. Which is comprised of a series of game modes designed to cater to these different user motivations. There you can find the following modes: Practice, Quick, Classic, Oklahoma, Challenges and Tournaments.</p>
+        <p>These were created to respectively address inexperienced players, casual players that prefer short sessions, competitive players that enjoy comparing themselves to other player’s performance and for the social players the ability to challenge opponents, friends and family.</p>
+        <h3>From features to journeys and the product</h3>
+        <p>With the personas and their motivations surveyed and validated, and having the feature set developed, off we went into prototyping and determining how the user journeys should be like.</p>
+        <p>During three months our team focused in developing user journeys that would be in line with all the existing best practices of game applications and beyond that, journeys that would cater to our unique user group.</p>
+      </article>
+      <div class="lightbox-wrap">
+        <a href="#img4">
+          <img class="thumbnail" src="images/GGR-05.jpg" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img4">
+          <img class="image" src="images/GGR-05.jpg" alt="">
+        </a>
+      </div>
+      <article class="article">
+        <p>After multiple design iterations, usability and flow tests, we finally had our MVP good to go. Our user journeys we’re simple and clear which is almost obligatory for game applications. For us, users should start playing with a maximum of two clicks and stay in-game for as long as possible. Because of that we developed the so called “continuous play flow”, in which users are constantly rematch or randomly matched with a new opponent in a single click after their game result.</p>
+        <p>At the same time that the flows were being developed, we also validated user's preference across multiple art styles so that once the prototype was finished the art team would have all the necessary infrastructure to unleash their creative juices in an appropriate framework.</p>
+        <p>Therefore, by the end of this intense period, having all marks checked we were ready to soft launch and put this bad boy out for the world to see. I hope you enjoy playing as much as we enjoyed make it. Now, let’s play!</p>
+      </article>
+      <div class="lightbox-wrap">
+        <a href="#img5">
+          <img class="thumbnail" src="images/GGR-08.png" alt="">
+        </a>
+        <a href="#_" class="lightbox" id="img5">
+          <img class="image" src="images/GGR-08.png" alt="">
+        </a>
+      </div>
     </main>
     <script src="js/anime.min.js"></script>
     <script src="js/interact.js"></script>

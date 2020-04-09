@@ -11,49 +11,73 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="author" content="">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Asap:500,700|Lato:300,300i,400,400i,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="banner full">
-      <div class="el">
-        <h2 class="el-header"><span class="wave">👋</span> Hi, there! <span class="wave flip">👋</span><br> I am Thiago Parizi a UX Designer and Manager based in Berlin</h2>
-        <div class="scroll-down">
-          <p>READ MORE</p>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
+      <h1 class="animate-header">I am Thiago Parizi, a seasoned designer and passionate manager. Currently I'm the Head of User Experience at Amboss.</h1>
+      <a href="#article-01">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down bounce"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        <!-- <i class="fas fa-chevron-down"></i> -->
+      </a>
     </header>
-    <main class="grid">
+    <main>
       <span id="article-01"></span>
-      <article class="card">
-        <div class="bg-img post-url-01"></div>
-        <div class="content-wrap">
-          <h2>Amboss anki add-on</h2>
-          <p>Nulla ex felis, pharetra eleifend convallis at, egestas at metus. Nam lacus mauris, tempus vitae purus posuere.</p>
-          <a href="article.html" class="primary-button">See case study</a>
+      <article class="grid">
+        <div class="img img-big col post-url-01"></div>
+        <div class="col-invert col">
+          <div class="right content-wrap">
+            <h2>Amboss</h2>
+            <p class="headline">Amboss is the leading e-learning resource for medical students in Germany and the US, that helps them prepare for medical exams. As the Head of UX I’ve been helping solidify the department by working on a platform redesign and new products.</p>
+            <a href="article.html" class="primary-button">
+              <div class="slide"></div>
+              <p>See case study</p>
+            </a>
+          </div>
         </div>
       </article>
       <span id="article-02"></span>
-      <article class="card">
-        <div class="bg-img post-url-02"></div>
-        <div class="content-wrap">
-          <h2>Grand Gin Rummy 2</h2>
-          <p>A Gin Rummy card game application for iOS and Android platform</p>
-          <a href="grand-gin-rummy-2.html" class="primary-button">See case study</a>
+      <article class="grid">
+        <div class="img img-big col post-url-02"></div>
+        <div class="col">
+          <div class="content-wrap">
+            <h2>GameDuell</h2>
+            <p class="headline">GameDuell is a cross-platform games community headquartered in Berlin, Germany. It operates over 70 games in seven languages with over 130 million users. As the Head of UX at GameDuell I created the UX Design and Research teams from the ground up. Our team worked in several game titles and maintained the company’s website.</p>
+            <a href="grand-gin-rummy-2.html" class="primary-button">
+              <div class="slide"></div>
+              <p>See case study</p>
+            </a>
+          </div>
         </div>
       </article>
       <span id="article-03"></span>
-      <article class="card">
-        <div class="bg-img post-url-03"></div>
-        <div class="content-wrap">
-          <h2>Belote</h2>
-          <p>A multi-platform Belote card game application</p>
-          <a href="belote.html" class="primary-button">See case study</a>
+      <article class="grid">
+        <div class="img img-big col post-url-03"></div>
+        <div class="col-invert col">
+          <div class="right content-wrap">
+            <h2>Brazil Warsaw & Astoria</h2>
+            <p class="headline">As a UX Designer at both Brazil Warsaw and Astoria, an advertisement and PR agency respectively, I got to work with multiple clients in a series of different digital projects. From ad campaigns for big brands and 3D modeling, to e-commerce websites and more.</p>
+            <a href="belote.html" class="primary-button">
+              <div class="slide"></div>
+              <p>See case study</p>
+            </a>
+          </div>
+        </div>
+      </article>
+      <span id="article-04"></span>
+      <article class="grid">
+        <div class="img img-small col post-url-04"></div>
+        <div class="col">
+          <div class="content-wrap">
+            <h2>Thiago Parizi</h2>
+            <p class="headline">With over 10 years of professional experience, I’m a seasoned UX Designer, Strategist and Manager. Coming from a strong visual background developed in the fine arts, combined with years of practice in the technology field, user research and considerable management and business experience, I’m able to bridge the gap between creativity, research and leadership to help organizations and teams, big or small, achieve their goals.</p>
+            <a href="https://www.linkedin.com/in/thiago-parizi/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+          </div>
         </div>
       </article>
     </main>
+    <script src="js/noframework.waypoints.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/interact.js"></script>
   </body>
